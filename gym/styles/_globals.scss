@@ -1,0 +1,76 @@
+body {
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--color-white);
+  background-color: var(--background);
+}
+
+a,
+button,
+textarea,
+input,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  @include fluid-text(80, 32);
+  line-height: 80px;
+  font-family: "Hind";
+  font-weight: 500;
+  @include mobile {
+    line-height: 40px;
+  }
+}
+h2 {
+  @include fluid-text(60, 32);
+  line-height: 80px;
+  font-family: "Hind";
+  font-weight: 600;
+  @include mobile {
+    line-height: 40px;
+  }
+}
+h3 {
+  @include fluid-text(32, 20);
+  line-height: 40px;
+  font-family: "Hind";
+  font-weight: 700;
+}
+h4 {
+  @include fluid-text(28, 16);
+  line-height: 80px;
+  font-family: "Hind";
+  font-weight: 500;
+  @include mobile {
+    line-height: 40px;
+  }
+}
+h5 {
+  @include fluid-text(24, 16);
+  line-height: 40px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+p {
+  @include fluid-text(20, 15);
+  line-height: 1.2;
+  font-family: "Montserrat";
+
+  font-weight: 500;
+}
+
+.button-text {
+  font-size: 20px;
+  line-height: 25.6px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}

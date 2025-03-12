@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Testove</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="#" class="header__logo">
+            <span class="visually-hidden">LOGO LINK</span>
+            <img
+              src="./public/logo/logo-white.svg"
+              alt="logo"
+              class="header__logo-img"
+            />
+          </a>
+          <nav class="header__nav hidden-mobile">
+            <ul class="header__list hidden-mobile">
+              <li class="header__item">
+                <a href="#" class="header__item-link"
+                  ><h5 class="header__item-link-text">Blog</h5></a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-link"
+                  ><h5 class="header__item-link-text">Kontakt</h5></a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-link"
+                  ><h5 class="header__item-link-text">O nas</h5></a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__item-link"
+                  ><h5 class="header__item-link-text">Treningi</h5></a
+                >
+              </li>
+            </ul>
+            <button class="header__button button hidden-tablet">
+              Umow sie na trening
+            </button>
+          </nav>
+          <button id="modalOpen" class="header__burger visible-mobile"></button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content-wrapper">
+              <div class="hero__dot"></div>
+              <img
+                src="./public/hero/boxer.png"
+                alt="hero-img"
+                class="hero__img hidden-mobile"
+              />
+              <div class="hero__content">
+                <h1 class="hero__title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </h1>
+                <p class="hero__text hidden-tablet">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas condimentum ex nunc, et porttitor purus hendrerit in.
+                  Suspendisse orciurus. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Maecenas condimentum ex nunc, et porttitor
+                  purus hendrerit in. Suspendisse orcipurus.
+                </p>
+                <p class="hero__text visible-tablet">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas condimentum ex nunc, et porttitor purus hendrerit in.
+                  Suspendisse orciurus.
+                </p>
+                <button class="hero__btn button">Umow sie na trening</button>
+                <p class="hero__seb-text">Suspendisse orcipurus.</p>
+              </div>
+            </div>
+            <div class="hero__contacts">
+              <div class="hero__contacts-item">
+                <div class="hero__contacts-item-icon-wrapper">
+                  <svg
+                    class="hero__contacts-item-icon"
+                    viewBox="0 0 34 34"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.13667 14.7817C9.77667 19.97 14.03 24.205 19.2183 26.8633L23.2517 22.83C23.7467 22.335 24.48 22.17 25.1217 22.39C27.175 23.0683 29.3933 23.435 31.6667 23.435C32.675 23.435 33.5 24.26 33.5 25.2683V31.6667C33.5 32.675 32.675 33.5 31.6667 33.5C14.4517 33.5 0.5 19.5483 0.5 2.33333C0.5 1.325 1.325 0.5 2.33333 0.5H8.75C9.75833 0.5 10.5833 1.325 10.5833 2.33333C10.5833 4.625 10.95 6.825 11.6283 8.87833C11.83 9.52 11.6833 10.235 11.17 10.7483L7.13667 14.7817Z"
+                      fill="url(#paint0_linear_27_149)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_27_149"
+                        x1="-5.5"
+                        y1="17.2619"
+                        x2="33.5"
+                        y2="17.2619"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF5637" />
+                        <stop offset="1" stop-color="#F7084C" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+
+                <p class="hero__contacts-item-text">+432 344 343 444</p>
+              </div>
+              <div class="hero__contacts-item">
+                <div class="hero__contacts-item-icon-wrapper">
+                  <svg
+                    class="hero__contacts-item-icon"
+                    viewBox="0 0 38 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.0001 0.666504C29.1256 0.666504 37.3334 8.87434 37.3334 18.9998C37.3334 29.1253 29.1256 37.3332 19.0001 37.3332C8.87458 37.3332 0.666748 29.1253 0.666748 18.9998C0.666748 8.87434 8.87458 0.666504 19.0001 0.666504ZM19.0001 7.99984C18.5139 7.99984 18.0475 8.19299 17.7037 8.53681C17.3599 8.88063 17.1667 9.34694 17.1667 9.83317V18.9998C17.1669 19.486 17.3601 19.9523 17.7039 20.296L23.2039 25.796C23.5497 26.13 24.0128 26.3148 24.4935 26.3106C24.9742 26.3064 25.434 26.1136 25.7739 25.7737C26.1138 25.4338 26.3066 24.9739 26.3108 24.4932C26.315 24.0125 26.1302 23.5494 25.7962 23.2037L20.8334 18.2408V9.83317C20.8334 9.34694 20.6403 8.88063 20.2964 8.53681C19.9526 8.19299 19.4863 7.99984 19.0001 7.99984Z"
+                      fill="url(#paint0_linear_27_156)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_27_156"
+                        x1="-5.99992"
+                        y1="19.2908"
+                        x2="37.3334"
+                        y2="19.2908"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF5637" />
+                        <stop offset="1" stop-color="#F7084C" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+
+                <p class="hero__contacts-item-text">Pon -Pt: 8:00-20:00</p>
+              </div>
+              <div class="hero__contacts-item">
+                <div class="hero__contacts-item-icon-wrapper">
+                  <svg
+                    class="hero__contacts-item-icon"
+                    viewBox="0 0 26 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.0001 18.0832C11.7845 18.0832 10.6187 17.6003 9.75918 16.7407C8.89963 15.8812 8.41675 14.7154 8.41675 13.4998C8.41675 12.2843 8.89963 11.1185 9.75918 10.2589C10.6187 9.39939 11.7845 8.9165 13.0001 8.9165C14.2157 8.9165 15.3814 9.39939 16.241 10.2589C17.1005 11.1185 17.5834 12.2843 17.5834 13.4998C17.5834 14.1017 17.4649 14.6977 17.2345 15.2538C17.0042 15.8099 16.6666 16.3151 16.241 16.7407C15.8154 17.1663 15.3101 17.504 14.754 17.7343C14.198 17.9646 13.602 18.0832 13.0001 18.0832ZM13.0001 0.666504C9.59647 0.666504 6.33226 2.01858 3.92554 4.4253C1.51883 6.83202 0.166748 10.0962 0.166748 13.4998C0.166748 23.1248 13.0001 37.3332 13.0001 37.3332C13.0001 37.3332 25.8334 23.1248 25.8334 13.4998C25.8334 10.0962 24.4813 6.83202 22.0746 4.4253C19.6679 2.01858 16.4037 0.666504 13.0001 0.666504Z"
+                      fill="url(#paint0_linear_27_161)"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_27_161"
+                        x1="-4.49992"
+                        y1="19.2908"
+                        x2="25.8334"
+                        y2="19.2908"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF5637" />
+                        <stop offset="1" stop-color="#F7084C" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+
+                <p class="hero__contacts-item-text">
+                  ul. Prwkrkwrjkrkwjr 11, ff Krakow
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cards">
+        <img
+          src="./public/cards/woman.png"
+          alt="woman"
+          class="cards__woman hidden-mobile"
+        />
+        <div class="container">
+          <div class="cards__inner">
+            <div class="cards__content">
+              <div class="cards__item">
+                <div class="cards__item-icon-wraper">
+                  <svg
+                    class="cards__item-icon"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M92.85 64.3L100 57.15L92.85 50L75 67.85L32.15 25L50 7.15L42.85 0L35.7 7.15L28.55 0L17.85 10.7L10.7 3.55L3.55 10.7L10.7 17.85L0 28.55L7.15 35.7L0 42.85L7.15 50L25 32.15L67.85 75L50 92.85L57.15 100L64.3 92.85L71.45 100L82.15 89.3L89.3 96.45L96.45 89.3L89.3 82.15L100 71.45L92.85 64.3Z"
+                      fill="url(#paint0_linear_79_353)"
+                    />
+                    <defs class="cards__item-icon-gradient">
+                      <linearGradient
+                        id="paint0_linear_79_353"
+                        x1="-18.1818"
+                        y1="50.7937"
+                        x2="100"
+                        y2="50.7937"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF5637" />
+                        <stop offset="1" stop-color="#F7084C" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="cards__item-content">
+                  <h3 class="cards__item-title">Efekty na lata</h3>
+                  <h5 class="cards__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas condimentum ex nunc, et porttitor purus hendrerit
+                    in.
+                  </h5>
+                </div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-icon-wraper">
+                  <svg
+                    class="cards__item-icon"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M48.2451 11.5239C43.1201 12.185 38.2633 14.1005 36.2132 15.8748C24.2565 26.283 17.5053 40.042 14.0009 52.038C12.492 57.12 11.4814 62.3515 10.9849 67.6503C10.8024 69.8145 10.6361 72.0804 10.9473 74.2445C13.0028 76.6968 15.9114 78.4767 18.6108 80.0024C24.2511 83.1949 32.725 86.5061 44.1182 87.8396C50.5689 88.5968 58.7154 89.0262 66.2286 88.3934C74.0262 87.7322 80.0046 86.0088 83.1065 83.3927C88.3336 78.9909 89.6537 73.8546 89.1761 69.3568C88.6663 64.52 86.085 60.429 83.4875 58.6039C79.0064 55.4622 73.9618 55.1458 69.207 56.4567C64.3127 57.8128 60.2931 60.7511 58.3934 63.1582C57.9167 63.7637 57.3253 64.2577 56.657 64.6088C55.9886 64.9598 55.258 65.1601 54.5119 65.1968C53.7659 65.2335 53.0207 65.1058 52.3242 64.8219C51.6277 64.538 50.9951 64.1041 50.4669 63.5481C47.5153 60.4403 42.4975 59.5362 35.7732 64.2544C35.0396 64.7702 34.1965 65.0876 33.3186 65.1786C32.4407 65.2695 31.555 65.1312 30.7399 64.7759C29.9249 64.4206 29.2056 63.8592 28.6457 63.1414C28.0859 62.4236 27.7027 61.5716 27.5301 60.6607C25.9953 52.5578 26.7949 43.9465 28.2117 36.8438C29.6392 29.7298 31.7858 23.6103 33.3636 20.2991C33.8098 19.3618 34.4948 18.5737 35.3421 18.0229C36.1894 17.4721 37.1656 17.1804 38.1613 17.1804C39.1571 17.1804 40.1332 17.4721 40.9805 18.0229C41.8278 18.5737 42.5129 19.3618 42.9591 20.2991C44.0485 22.5819 46.0395 24.6274 48.3578 25.4863C50.1556 24.294 51.7173 22.6271 52.9838 20.8472C55.3129 17.5812 56.0911 14.4904 55.0553 11.7612C52.9516 10.9701 50.4079 11.247 48.2451 11.5239ZM56.2038 0.426278C58.8012 0.951775 62.5954 2.3192 64.4254 6.17284C68.4342 14.6147 65.1231 22.6384 61.5704 27.6278C59.252 30.8825 56.2682 33.9451 52.796 35.821C52.0715 36.2166 50.5957 36.9511 48.8945 36.9511C45.7228 36.9511 42.6156 35.4312 40.0665 33.5326C39.5835 35.2617 39.1166 37.1602 38.7141 39.1718C37.9181 43.0314 37.4867 46.9645 37.4261 50.9136C43.0771 48.9924 48.8569 49.1958 53.8371 52.1567C57.5799 49.062 61.8846 46.8064 66.4862 45.5286C73.4627 43.6018 81.8346 43.8674 89.4391 49.2015C94.8862 53.0268 99.0131 60.2312 99.8449 68.1137C100.714 76.3295 98.0042 85.3138 89.8094 92.2187C84.0242 97.0895 75.2069 98.9711 67.0926 99.6548C58.6939 100.367 49.8229 99.8808 42.9376 99.0728C30.1758 97.5811 20.3764 93.8291 13.5287 89.9585C9.03684 87.4158 2.8921 83.9012 0.944027 78.5163C-0.370788 74.8661 -0.0273261 70.4361 0.294669 66.6389C0.723996 61.6608 1.77585 55.4453 3.74539 48.7099C7.67373 35.2673 15.364 19.3611 29.3762 7.16733C33.6856 3.4154 40.8983 1.08739 46.9357 0.307618C50.0483 -0.0935677 53.3219 -0.150073 56.2038 0.426278Z"
+                      fill="url(#paint0_linear_75_250)"
+                    />
+                    <defs class="cards__item-icon-gradient">
+                      <linearGradient
+                        id="paint0_linear_75_250"
+                        x1="-18.1818"
+                        y1="50.7937"
+                        x2="100"
+                        y2="50.7937"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF5637" />
+                        <stop offset="1" stop-color="#F7084C" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="cards__item-content">
+                  <h3 class="cards__item-title">Studio fitness</h3>
+                  <h5 class="cards__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas condimentum ex nunc, et porttitor purus hendrerit
+                    in.
+                  </h5>
+                </div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-icon-wraper">
+                  <svg
+                    class="cards__item-icon"
+                    viewBox="0 0 100 100"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.6364 11.1111C13.6364 5 17.7273 0 22.7273 0C27.7273 0 31.8182 5 31.8182 11.1111C31.8182 17.2222 27.7273 22.2222 22.7273 22.2222C17.7273 22.2222 13.6364 17.2222 13.6364 11.1111ZM0 27.7778H27.2727L59.0909 0L65.0455 8.33333L46.0909 25H59.0909L94.5454 0L100 7.77778L61.3636 44.4444L59.0909 100H50L47.7273 44.4444L31.8182 38.8889H0V27.7778Z"
+                      fill="url(#paint0_linear_79_371)"
+                    />
+                    <defs class="cards__item-icon-gradient">
+                      <linearGradient
+                        id="paint0_linear_79_371"
+                        x1="-18.1818"
+                        y1="50.7937"
+                        x2="100"
+                        y2="50.7937"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF5637" />
+                        <stop offset="1" stop-color="#F7084C" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="cards__item-content">
+                  <h3 class="cards__item-title">Autorskie treningi</h3>
+                  <h5 class="cards__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas condimentum ex nunc, et porttitor purus hendrerit
+                    in.
+                  </h5>
+                </div>
+              </div>
+              <div class="cards__item">
+                <div class="cards__item-icon-wraper">
+                  <svg
+                    class="cards__item-icon"
+                    viewBox="0 0 44 44"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M42.4188 10.3842C41.7713 8.91568 40.9214 7.54508 39.8937 6.31233L34.4469 11.7592C35.722 12.5138 37.2241 12.7899 38.6842 12.538C40.1444 12.286 41.4671 11.5225 42.4156 10.3842M32.2344 9.54983L37.6812 4.10295C36.4495 3.07555 35.0799 2.22564 33.6125 1.57795C32.4734 2.52661 31.7094 3.84994 31.4574 5.31077C31.2055 6.77159 31.482 8.27439 32.2375 9.54983M28.25 6.37483C28.25 8.39983 28.8938 10.2748 29.9844 11.8061L27.4688 14.3217L16.5688 3.41858C18.5274 1.99562 20.7637 1.00089 23.1322 0.4991C25.5006 -0.00269245 27.9482 -0.000314586 30.3156 0.506079C28.9791 2.17016 28.2504 4.24048 28.25 6.37483ZM29.6781 16.5311L32.1937 14.0155C33.725 15.1092 35.6 15.7498 37.625 15.7498C39.759 15.7503 41.8293 15.0227 43.4938 13.6873C43.7458 14.8582 43.8729 16.0665 43.875 17.3123C43.875 21.0936 42.6531 24.5936 40.5812 27.4342L29.6781 16.5311ZM38.5125 29.7842L27.4688 18.7405L25.5781 20.6311C28.8281 24.3357 30.8223 28.9738 31.275 33.8811C34.025 33.1217 36.5 31.6905 38.5125 29.7842ZM10.1156 12.7248C10.875 9.97483 12.3031 7.49983 14.2094 5.48733L25.2594 16.5311L23.3687 18.4217C19.6641 15.1717 15.0229 13.1776 10.1156 12.7248ZM4.8125 15.7498C3.5693 15.7498 2.37701 16.2437 1.49794 17.1228C0.61886 18.0018 0.125 19.1941 0.125 20.4373V23.5623C0.125 28.9495 2.26506 34.1161 6.07439 37.9254C9.88373 41.7348 15.0503 43.8748 20.4375 43.8748H23.5625C24.8057 43.8748 25.998 43.381 26.8771 42.5019C27.7561 41.6228 28.25 40.4305 28.25 39.1873V36.0623C28.25 30.6751 26.1099 25.5086 22.3006 21.6992C18.4913 17.8899 13.3247 15.7498 7.9375 15.7498H4.8125ZM10.7375 26.3623C10.8826 26.2168 11.0551 26.1014 11.2449 26.0226C11.4347 25.9438 11.6382 25.9033 11.8438 25.9033C12.0493 25.9033 12.2528 25.9438 12.4426 26.0226C12.6324 26.1014 12.8049 26.2168 12.95 26.3623L17.6375 31.0498C17.7828 31.1951 17.898 31.3676 17.9766 31.5574C18.0553 31.7472 18.0957 31.9506 18.0957 32.1561C18.0957 32.3615 18.0553 32.565 17.9766 32.7548C17.898 32.9446 17.7828 33.1171 17.6375 33.2623C17.4922 33.4076 17.3198 33.5228 17.1299 33.6015C16.9401 33.6801 16.7367 33.7206 16.5312 33.7206C16.3258 33.7206 16.1224 33.6801 15.9326 33.6015C15.7427 33.5228 15.5703 33.4076 15.425 33.2623L10.7375 28.5748C10.592 28.4297 10.4765 28.2573 10.3978 28.0674C10.319 27.8776 10.2785 27.6741 10.2785 27.4686C10.2785 27.2631 10.319 27.0596 10.3978 26.8697C10.4765 26.6799 10.592 26.5075 10.7375 26.3623Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="cards__item-content">
+                  <h3 class="cards__item-title">Efekty na lata</h3>
+                  <h5 class="cards__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas condimentum ex nunc, et porttitor purus hendrerit
+                    in.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <h2 class="cards__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <article class="another__cards">
+              <div class="another__item">
+                <p class="another__item-count">Goal 01</p>
+                <div class="another__item-content">
+                  <h3 class="another__item-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <h5 class="another__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas condimentum ex nunc, et porttitor purus hendrerit
+                    in. Suspendisse orciurus. Lorem ipsum dolor sit
+                  </h5>
+                </div>
+              </div>
+              <div class="another__item">
+                <p class="another__item-count">Goal 02</p>
+                <div class="another__item-content">
+                  <h3 class="another__item-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <h5 class="another__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas condimentum ex nunc, et porttitor purus hendrerit
+                    in. Suspendisse orciurus. Lorem ipsum dolor sit
+                  </h5>
+                </div>
+              </div>
+              <div class="another__item">
+                <p class="another__item-count">Goal 03</p>
+                <div class="another__item-content">
+                  <h3 class="another__item-title">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </h3>
+                  <h5 class="another__item-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Maecenas condimentum ex nunc, et porttitor purus hendrerit
+                    in. Suspendisse orciurus. Lorem ipsum dolor sit
+                  </h5>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="faq__inner">
+            <h2 class="faq__title">Lorem ipsum dolor sit amet, consectetur?</h2>
+            <div class="faq__content">
+              <div class="faq__item">
+                <div class="faq__item-main">
+                  <h3 class="faq__item-title">Efekty na lata</h3>
+                  <div class="faq__item-content">
+                    <div class="faq__item-content-text-wrapper">
+                      <p class="faq__item-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="faq__item-button">
+                  <svg
+                    class="faq__item-button-icon"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 1.80892L1.775 0L10 8.38217L18.225 0L20 1.80892L10 12L0 1.80892Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq__item">
+                <div class="faq__item-main">
+                  <h3 class="faq__item-title">Efekty na lata</h3>
+                  <div class="faq__item-content">
+                    <div class="faq__item-content-text-wrapper">
+                      <p class="faq__item-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="faq__item-button">
+                  <svg
+                    class="faq__item-button-icon"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 1.80892L1.775 0L10 8.38217L18.225 0L20 1.80892L10 12L0 1.80892Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq__item">
+                <div class="faq__item-main">
+                  <h3 class="faq__item-title">Efekty na lata</h3>
+                  <div class="faq__item-content">
+                    <div class="faq__item-content-text-wrapper">
+                      <p class="faq__item-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="faq__item-button">
+                  <svg
+                    class="faq__item-button-icon"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 1.80892L1.775 0L10 8.38217L18.225 0L20 1.80892L10 12L0 1.80892Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq__item">
+                <div class="faq__item-main">
+                  <h3 class="faq__item-title">Efekty na lata</h3>
+                  <div class="faq__item-content">
+                    <div class="faq__item-content-text-wrapper">
+                      <p class="faq__item-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="faq__item-button">
+                  <svg
+                    class="faq__item-button-icon"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 1.80892L1.775 0L10 8.38217L18.225 0L20 1.80892L10 12L0 1.80892Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq__item">
+                <div class="faq__item-main">
+                  <h3 class="faq__item-title">Efekty na lata</h3>
+                  <div class="faq__item-content">
+                    <div class="faq__item-content-text-wrapper">
+                      <p class="faq__item-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="faq__item-button">
+                  <svg
+                    class="faq__item-button-icon"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 1.80892L1.775 0L10 8.38217L18.225 0L20 1.80892L10 12L0 1.80892Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="faq__item">
+                <div class="faq__item-main">
+                  <h3 class="faq__item-title">Efekty na lata</h3>
+                  <div class="faq__item-content">
+                    <div class="faq__item-content-text-wrapper">
+                      <p class="faq__item-content-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="faq__item-button">
+                  <svg
+                    class="faq__item-button-icon"
+                    viewBox="0 0 20 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 1.80892L1.775 0L10 8.38217L18.225 0L20 1.80892L10 12L0 1.80892Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="targets">
+        <div class="container">
+          <div class="targets__inner">
+            <h2 class="targets__title">
+              Lorem ipsum dolor sit amet, consectetur:
+            </h2>
+            <div class="targets__content">
+              <div class="targets__item">
+                <svg
+                  class="targets__item-icon"
+                  viewBox="0 0 94 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M77.0814 4.95976e-06C79.5189 4.95976e-06 81.5001 1.98126 81.5001 4.41876V12.5H89.5814C90.4554 12.4998 91.3099 12.7589 92.0368 13.2444C92.7636 13.7299 93.3301 14.4201 93.6646 15.2276C93.9992 16.0352 94.0867 16.9238 93.9161 17.7811C93.7455 18.6383 93.3245 19.4258 92.7064 20.0438L83.5814 29.1688C82.249 30.4982 80.4447 31.2464 78.5626 31.25H69.3751L47.3126 53.3125C46.424 54.1405 45.2487 54.5913 44.0343 54.5699C42.82 54.5484 41.6613 54.0565 40.8025 53.1976C39.9436 52.3388 39.4517 51.1802 39.4303 49.9658C39.4088 48.7514 39.8596 47.5761 40.6876 46.6875L62.7501 24.625V15.4375C62.7501 13.5563 63.5001 11.75 64.8314 10.4125L73.9564 1.2875C74.3653 0.875262 74.8523 0.548556 75.3888 0.326435C75.9253 0.104315 76.5007 -0.00877662 77.0814 -0.00624504M9.6251 50C9.62444 44.9034 10.7571 39.8703 12.9411 35.2653C15.1251 30.6603 18.3057 26.5986 22.2528 23.3742C26.1998 20.1498 30.8144 17.8435 35.7626 16.6221C40.7107 15.4008 45.8685 15.295 50.8626 16.3125C52.0746 16.5438 53.3289 16.2878 54.3535 15.6002C55.378 14.9125 56.0901 13.8487 56.3352 12.6394C56.5804 11.4301 56.3388 10.1729 55.663 9.14057C54.9871 8.10824 53.9315 7.38401 52.7251 7.125C43.5105 5.25159 33.9375 6.39682 25.4249 10.391C16.9123 14.3851 9.91301 21.0156 5.46443 29.2998C1.01584 37.5841 -0.645327 47.0811 0.727119 56.3835C2.09956 65.6859 6.43258 74.2986 13.084 80.9451C19.7354 87.5917 28.3513 91.9184 37.6547 93.284C46.9581 94.6497 56.4539 92.9816 64.7349 88.5269C73.0158 84.0723 79.6412 77.0681 83.6291 68.5526C87.617 60.037 88.7553 50.4632 86.8751 41.25C86.6273 40.0317 85.9056 38.9617 84.8689 38.2754C83.8322 37.5891 82.5653 37.3428 81.347 37.5906C80.1286 37.8384 79.0586 38.5601 78.3724 39.5968C77.6861 40.6335 77.4398 41.9004 77.6876 43.1188C78.1418 45.3396 78.3709 47.6333 78.3751 50C78.3751 59.1168 74.7535 67.8602 68.3069 74.3068C61.8603 80.7534 53.1169 84.375 44.0001 84.375C34.8833 84.375 26.1399 80.7534 19.6933 74.3068C13.2467 67.8602 9.6251 59.1168 9.6251 50ZM43.1501 34.4C44.3916 34.3337 45.556 33.7769 46.387 32.8521C47.218 31.9273 47.6477 30.7103 47.5813 29.4688C47.515 28.2272 46.9583 27.0629 46.0335 26.2318C45.1087 25.4008 43.8916 24.9712 42.6501 25.0375C37.8496 25.2962 33.2256 26.9335 29.3319 29.7533C25.4383 32.573 22.4402 36.4556 20.697 40.9358C18.9537 45.4161 18.5392 50.3039 19.5031 55.0137C20.4669 59.7236 22.7683 64.0556 26.1315 67.4908C29.4947 70.9259 33.777 73.3186 38.4654 74.382C43.1537 75.4454 48.0492 75.1345 52.5654 73.4865C57.0815 71.8385 61.0267 68.9234 63.9283 65.0903C66.8299 61.2573 68.5648 56.6689 68.9251 51.875C69.0171 50.6351 68.6128 49.4095 67.8011 48.4677C66.9894 47.5259 65.8369 46.9451 64.597 46.8531C63.3571 46.7611 62.1314 47.1654 61.1897 47.9771C60.2479 48.7888 59.6671 49.9414 59.5751 51.1813C59.3471 54.1759 58.2609 57.0414 56.4466 59.4347C54.6322 61.828 52.1666 63.6476 49.3448 64.6759C46.523 65.7041 43.4646 65.8974 40.5359 65.2325C37.6071 64.5675 34.932 63.0727 32.8309 60.9268C30.7297 58.7809 29.2915 56.0749 28.6884 53.1328C28.0854 50.1906 28.343 47.137 29.4304 44.3375C30.5179 41.538 32.3891 39.1113 34.8201 37.3477C37.2511 35.5842 40.1388 34.5586 43.1376 34.3938"
+                    fill="url(#paint0_linear_27_245)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_27_245"
+                      x1="-16.7855"
+                      y1="47.6149"
+                      x2="94.001"
+                      y2="47.6149"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF5637" />
+                      <stop offset="1" stop-color="#F7084C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <p class="targets__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas
+                </p>
+              </div>
+              <div class="targets__item">
+                <svg
+                  class="targets__item-icon"
+                  viewBox="0 0 94 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M77.0814 4.95976e-06C79.5189 4.95976e-06 81.5001 1.98126 81.5001 4.41876V12.5H89.5814C90.4554 12.4998 91.3099 12.7589 92.0368 13.2444C92.7636 13.7299 93.3301 14.4201 93.6646 15.2276C93.9992 16.0352 94.0867 16.9238 93.9161 17.7811C93.7455 18.6383 93.3245 19.4258 92.7064 20.0438L83.5814 29.1688C82.249 30.4982 80.4447 31.2464 78.5626 31.25H69.3751L47.3126 53.3125C46.424 54.1405 45.2487 54.5913 44.0343 54.5699C42.82 54.5484 41.6613 54.0565 40.8025 53.1976C39.9436 52.3388 39.4517 51.1802 39.4303 49.9658C39.4088 48.7514 39.8596 47.5761 40.6876 46.6875L62.7501 24.625V15.4375C62.7501 13.5563 63.5001 11.75 64.8314 10.4125L73.9564 1.2875C74.3653 0.875262 74.8523 0.548556 75.3888 0.326435C75.9253 0.104315 76.5007 -0.00877662 77.0814 -0.00624504M9.6251 50C9.62444 44.9034 10.7571 39.8703 12.9411 35.2653C15.1251 30.6603 18.3057 26.5986 22.2528 23.3742C26.1998 20.1498 30.8144 17.8435 35.7626 16.6221C40.7107 15.4008 45.8685 15.295 50.8626 16.3125C52.0746 16.5438 53.3289 16.2878 54.3535 15.6002C55.378 14.9125 56.0901 13.8487 56.3352 12.6394C56.5804 11.4301 56.3388 10.1729 55.663 9.14057C54.9871 8.10824 53.9315 7.38401 52.7251 7.125C43.5105 5.25159 33.9375 6.39682 25.4249 10.391C16.9123 14.3851 9.91301 21.0156 5.46443 29.2998C1.01584 37.5841 -0.645327 47.0811 0.727119 56.3835C2.09956 65.6859 6.43258 74.2986 13.084 80.9451C19.7354 87.5917 28.3513 91.9184 37.6547 93.284C46.9581 94.6497 56.4539 92.9816 64.7349 88.5269C73.0158 84.0723 79.6412 77.0681 83.6291 68.5526C87.617 60.037 88.7553 50.4632 86.8751 41.25C86.6273 40.0317 85.9056 38.9617 84.8689 38.2754C83.8322 37.5891 82.5653 37.3428 81.347 37.5906C80.1286 37.8384 79.0586 38.5601 78.3724 39.5968C77.6861 40.6335 77.4398 41.9004 77.6876 43.1188C78.1418 45.3396 78.3709 47.6333 78.3751 50C78.3751 59.1168 74.7535 67.8602 68.3069 74.3068C61.8603 80.7534 53.1169 84.375 44.0001 84.375C34.8833 84.375 26.1399 80.7534 19.6933 74.3068C13.2467 67.8602 9.6251 59.1168 9.6251 50ZM43.1501 34.4C44.3916 34.3337 45.556 33.7769 46.387 32.8521C47.218 31.9273 47.6477 30.7103 47.5813 29.4688C47.515 28.2272 46.9583 27.0629 46.0335 26.2318C45.1087 25.4008 43.8916 24.9712 42.6501 25.0375C37.8496 25.2962 33.2256 26.9335 29.3319 29.7533C25.4383 32.573 22.4402 36.4556 20.697 40.9358C18.9537 45.4161 18.5392 50.3039 19.5031 55.0137C20.4669 59.7236 22.7683 64.0556 26.1315 67.4908C29.4947 70.9259 33.777 73.3186 38.4654 74.382C43.1537 75.4454 48.0492 75.1345 52.5654 73.4865C57.0815 71.8385 61.0267 68.9234 63.9283 65.0903C66.8299 61.2573 68.5648 56.6689 68.9251 51.875C69.0171 50.6351 68.6128 49.4095 67.8011 48.4677C66.9894 47.5259 65.8369 46.9451 64.597 46.8531C63.3571 46.7611 62.1314 47.1654 61.1897 47.9771C60.2479 48.7888 59.6671 49.9414 59.5751 51.1813C59.3471 54.1759 58.2609 57.0414 56.4466 59.4347C54.6322 61.828 52.1666 63.6476 49.3448 64.6759C46.523 65.7041 43.4646 65.8974 40.5359 65.2325C37.6071 64.5675 34.932 63.0727 32.8309 60.9268C30.7297 58.7809 29.2915 56.0749 28.6884 53.1328C28.0854 50.1906 28.343 47.137 29.4304 44.3375C30.5179 41.538 32.3891 39.1113 34.8201 37.3477C37.2511 35.5842 40.1388 34.5586 43.1376 34.3938"
+                    fill="url(#paint0_linear_27_245)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_27_245"
+                      x1="-16.7855"
+                      y1="47.6149"
+                      x2="94.001"
+                      y2="47.6149"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF5637" />
+                      <stop offset="1" stop-color="#F7084C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <p class="targets__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas
+                </p>
+              </div>
+              <div class="targets__item">
+                <svg
+                  class="targets__item-icon"
+                  viewBox="0 0 94 94"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M77.0814 4.95976e-06C79.5189 4.95976e-06 81.5001 1.98126 81.5001 4.41876V12.5H89.5814C90.4554 12.4998 91.3099 12.7589 92.0368 13.2444C92.7636 13.7299 93.3301 14.4201 93.6646 15.2276C93.9992 16.0352 94.0867 16.9238 93.9161 17.7811C93.7455 18.6383 93.3245 19.4258 92.7064 20.0438L83.5814 29.1688C82.249 30.4982 80.4447 31.2464 78.5626 31.25H69.3751L47.3126 53.3125C46.424 54.1405 45.2487 54.5913 44.0343 54.5699C42.82 54.5484 41.6613 54.0565 40.8025 53.1976C39.9436 52.3388 39.4517 51.1802 39.4303 49.9658C39.4088 48.7514 39.8596 47.5761 40.6876 46.6875L62.7501 24.625V15.4375C62.7501 13.5563 63.5001 11.75 64.8314 10.4125L73.9564 1.2875C74.3653 0.875262 74.8523 0.548556 75.3888 0.326435C75.9253 0.104315 76.5007 -0.00877662 77.0814 -0.00624504M9.6251 50C9.62444 44.9034 10.7571 39.8703 12.9411 35.2653C15.1251 30.6603 18.3057 26.5986 22.2528 23.3742C26.1998 20.1498 30.8144 17.8435 35.7626 16.6221C40.7107 15.4008 45.8685 15.295 50.8626 16.3125C52.0746 16.5438 53.3289 16.2878 54.3535 15.6002C55.378 14.9125 56.0901 13.8487 56.3352 12.6394C56.5804 11.4301 56.3388 10.1729 55.663 9.14057C54.9871 8.10824 53.9315 7.38401 52.7251 7.125C43.5105 5.25159 33.9375 6.39682 25.4249 10.391C16.9123 14.3851 9.91301 21.0156 5.46443 29.2998C1.01584 37.5841 -0.645327 47.0811 0.727119 56.3835C2.09956 65.6859 6.43258 74.2986 13.084 80.9451C19.7354 87.5917 28.3513 91.9184 37.6547 93.284C46.9581 94.6497 56.4539 92.9816 64.7349 88.5269C73.0158 84.0723 79.6412 77.0681 83.6291 68.5526C87.617 60.037 88.7553 50.4632 86.8751 41.25C86.6273 40.0317 85.9056 38.9617 84.8689 38.2754C83.8322 37.5891 82.5653 37.3428 81.347 37.5906C80.1286 37.8384 79.0586 38.5601 78.3724 39.5968C77.6861 40.6335 77.4398 41.9004 77.6876 43.1188C78.1418 45.3396 78.3709 47.6333 78.3751 50C78.3751 59.1168 74.7535 67.8602 68.3069 74.3068C61.8603 80.7534 53.1169 84.375 44.0001 84.375C34.8833 84.375 26.1399 80.7534 19.6933 74.3068C13.2467 67.8602 9.6251 59.1168 9.6251 50ZM43.1501 34.4C44.3916 34.3337 45.556 33.7769 46.387 32.8521C47.218 31.9273 47.6477 30.7103 47.5813 29.4688C47.515 28.2272 46.9583 27.0629 46.0335 26.2318C45.1087 25.4008 43.8916 24.9712 42.6501 25.0375C37.8496 25.2962 33.2256 26.9335 29.3319 29.7533C25.4383 32.573 22.4402 36.4556 20.697 40.9358C18.9537 45.4161 18.5392 50.3039 19.5031 55.0137C20.4669 59.7236 22.7683 64.0556 26.1315 67.4908C29.4947 70.9259 33.777 73.3186 38.4654 74.382C43.1537 75.4454 48.0492 75.1345 52.5654 73.4865C57.0815 71.8385 61.0267 68.9234 63.9283 65.0903C66.8299 61.2573 68.5648 56.6689 68.9251 51.875C69.0171 50.6351 68.6128 49.4095 67.8011 48.4677C66.9894 47.5259 65.8369 46.9451 64.597 46.8531C63.3571 46.7611 62.1314 47.1654 61.1897 47.9771C60.2479 48.7888 59.6671 49.9414 59.5751 51.1813C59.3471 54.1759 58.2609 57.0414 56.4466 59.4347C54.6322 61.828 52.1666 63.6476 49.3448 64.6759C46.523 65.7041 43.4646 65.8974 40.5359 65.2325C37.6071 64.5675 34.932 63.0727 32.8309 60.9268C30.7297 58.7809 29.2915 56.0749 28.6884 53.1328C28.0854 50.1906 28.343 47.137 29.4304 44.3375C30.5179 41.538 32.3891 39.1113 34.8201 37.3477C37.2511 35.5842 40.1388 34.5586 43.1376 34.3938"
+                    fill="url(#paint0_linear_27_245)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_27_245"
+                      x1="-16.7855"
+                      y1="47.6149"
+                      x2="94.001"
+                      y2="47.6149"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#FF5637" />
+                      <stop offset="1" stop-color="#F7084C" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
+                <p class="targets__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Maecenas
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <img
+            src="./public/footer/man.png"
+            alt="footer man image"
+            class="footer__img hidden-mobile"
+          />
+          <h2 class="footer__title">Lorem ipsum dolor sit amet, consectetur</h2>
+          <div class="footer__buttons">
+            <button class="footer__button button">Umow sie na trening</button>
+            <button class="footer__button button button--hollow">
+              Umow sie na trening
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal visible-mobile">
+      <div class="modal__inner">
+        <div class="container">
+          <button id="modalClose" class="modal__close"></button>
+          <div class="modal__content">
+            <nav class="modal__nav">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <a href="#" class="modal__link">Blog</a>
+                </li>
+                <li class="modal__item">
+                  <a href="#" class="modal__link">Kontakt</a>
+                </li>
+                <li class="modal__item">
+                  <a href="#" class="modal__link">O nas</a>
+                </li>
+                <li class="modal__item">
+                  <a href="#" class="modal__link">Treningi</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="modal__button button">Umow sie na trening</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./scripts/faq.js"></script>
+    <script src="./scripts/modal.js"></script>
+  </body>
+</html>

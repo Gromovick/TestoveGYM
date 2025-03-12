@@ -1,0 +1,23 @@
+:root {
+  --font-family-base: "Montserrat", sans-serif;
+
+  --color-black: #1c1c1c;
+  --color-red: #e63946;
+  --color-white: #ffffff;
+  --color-main: #7c0a32;
+  --color-accent: #f7084c;
+  --background: #030d19;
+
+  --button-gradient: linear-gradient(90deg, #ff5637, #f7084c);
+  --button-gradient-transition: linear-gradient(
+    90deg,
+    var(--background),
+    var(--background)
+  );
+  --border-radius: 10px;
+  --border-radius-large: 20px;
+
+  --container-width: 1756px;
+  --container-padding-x: 19px;
+  // --section-padding-y: 100px;
+}

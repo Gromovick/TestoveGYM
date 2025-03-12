@@ -1,0 +1,45 @@
+.footer {
+  &__inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    position: relative;
+  }
+
+  
+  &__title {
+    text-align: center;
+    @include tablet {
+      text-align: left;
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 81px;
+    gap: 120px;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include tablet {
+      justify-content: flex-start;
+      row-gap: 35px;
+    }
+    @include mobile {
+      gap: 35px;
+      margin-top: 33px;
+    }
+  }
+  &__button {
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+    // width: auto;
+    // aspect-ratio: 1375/719;
+    max-width: none;
+    @include tablet {
+      right: -300px;
+    }
+  }
+}

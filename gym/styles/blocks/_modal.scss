@@ -1,0 +1,83 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  display: none;
+  z-index: 100;
+
+  &--active {
+    display: block;
+  }
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  &__nav {
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  &__item {
+  }
+  &__link {
+    font-weight: 600;
+    @include fluid-text(32, 24);
+    color: var(--color-black);
+    @include hover {
+      color: var(--color-accent);
+    }
+    &:active,
+    &:focus {
+      color: var(--color-accent);
+    }
+  }
+  &__button {
+    @include hover {
+      color: var(--color-black);
+    }
+    &:active,
+    &:focus {
+      color: var(--color-black);
+    }
+  }
+  &__close {
+    @include reset-button;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 75px;
+    height: 75px;
+    border-radius: var(--border-radius);
+    &::before,
+    &::after {
+      content: "";
+      @include abs-center;
+      width: 50%;
+      height: 4px;
+      background-color: var(--color-black);
+      border-radius: 10px;
+      transform-origin: center;
+    }
+    &::after {
+      transform: rotateZ(45deg);
+    }
+    &::before {
+      transform: rotateZ(-45deg);
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.faq {
+  &__inner {
+  }
+  &__title {
+    text-align: center;
+    @include mobile {
+      text-align: left;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    margin-top: 90px;
+    @include mobile {
+      gap: 20px;
+    }
+  }
+  &__item {
+    padding: 20px 12px;
+    -webkit-box-shadow: 0px 0px 50px 0px var(--color-accent);
+    -moz-box-shadow: 0px 0px 50px 0px var(--color-accent);
+    box-shadow: 0px 0px 50px 0px var(--color-accent);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    // transition: background 0.3s ease-in-out;
+    // background: var(--button-gradient-transition);
+    &--active {
+      background: var(--button-gradient);
+
+      .faq__item-content {
+        grid-template-rows: 1fr;
+      }
+
+      .faq__item-button {
+        border: none;
+        &-icon {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    @include mobile {
+      padding: 18px 16px;
+      gap: 5px;
+    }
+
+    &-main {
+      align-content: center;
+    }
+
+    &-title {
+    }
+    &-button {
+      @include reset-button;
+      background: var(--background);
+      width: 80px;
+      height: 80px;
+      @include flex-center;
+      border-radius: 12px;
+      border: 2px solid var(--color-main);
+      flex-shrink: 0;
+      align-self: flex-start;
+
+      @include mobile {
+        width: 42px;
+        height: 42px;
+      }
+
+      &-icon {
+        width: 12px;
+        transition: transform 0.3s ease-in-out;
+        & path {
+          fill: var(--color-white);
+        }
+      }
+    }
+    &-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      overflow: hidden;
+      transition: grid-template-rows 0.3s ease-in-out;
+
+      &-text {
+        padding-top: 20px;
+        overflow: hidden;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "Montserrat", sans-serif;
+
+        @include mobile {
+          font-size: 14px;
+        }
+
+        &-wrapper {
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}

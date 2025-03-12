@@ -1,0 +1,169 @@
+.cards {
+  position: relative;
+  &__inner {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+  }
+
+  &__woman {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1200px;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 100px;
+    max-width: 1200px;
+    margin-inline: auto;
+    @include tablet {
+      order: -1;
+    }
+    @include mobile {
+      order: inherit;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 50px;
+    max-width: 1550px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    justify-content: space-between;
+    @include tablet {
+      flex-direction: column;
+      align-items: stretch;
+      max-width: 800px;
+      margin-inline: auto;
+    }
+  }
+
+  &__item {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius-large);
+    // background-color: var(--background);
+
+    -webkit-box-shadow: 0px 0px 50px 0px var(--color-accent);
+    -moz-box-shadow: 0px 0px 50px 0px var(--color-accent);
+    box-shadow: 0px 0px 50px 0px var(--color-accent);
+    max-width: 440px;
+
+    @include tablet {
+      flex-direction: row;
+      max-width: none;
+
+      justify-content: space-between;
+      padding: 0;
+      align-items: flex-start;
+      gap: 40px;
+
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--border-radius-large);
+      // background-color: var(--background);
+
+      -webkit-box-shadow: 0px 0px 50px 0px var(--color-accent);
+      -moz-box-shadow: 0px 0px 50px 0px var(--color-accent);
+      box-shadow: 0px 0px 50px 0px var(--color-accent);
+      padding: 24px 14px;
+      gap: 24px;
+    }
+
+    &:last-child {
+      display: none;
+      @include tablet {
+        display: flex;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-content {
+      text-align: center;
+      @include tablet {
+        text-align: left;
+        max-width: 572px;
+      }
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    &-title {
+      margin-bottom: 20px;
+    }
+    &-text {
+      text-align: inherit;
+    }
+    &-icon {
+      width: 100px;
+      height: 100px;
+      @include tablet {
+        width: 42px;
+        height: 42px;
+        & path {
+          fill: var(--color-white);
+        }
+      }
+      @include mobile {
+        width: 62px;
+        height: 62px;
+        & path {
+          fill: url(#paint0_linear_75_250);
+        }
+      }
+    }
+
+    &-icon-wraper {
+      position: relative;
+      margin-bottom: 20px;
+      z-index: 2;
+      @include tablet {
+        margin-top: 50px;
+        margin-left: 40px;
+      }
+      @include mobile {
+        margin-top: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: "";
+        display: none;
+        @include abs-center;
+        width: 115px;
+        height: 101px;
+        background-color: var(--color-accent);
+        border-radius: 50%;
+        z-index: -1;
+        filter: blur(50px);
+        @include tablet {
+          display: block;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+    }
+  }
+}

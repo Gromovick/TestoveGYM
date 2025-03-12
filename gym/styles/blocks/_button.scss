@@ -1,0 +1,29 @@
+.button {
+  padding: 19px 60px;
+  border-radius: var(--border-radius);
+  background: var(--button-gradient);
+  color: var(--color-white);
+  border: none;
+  transition: background 0.3s ease;
+  @include mobile {
+    padding: 6px 10px;
+  }
+
+  @include hover {
+    background: transparent;
+    outline: 1px solid var(--color-main);
+    color: var(--color-white);
+  }
+
+  &--hollow {
+    background: transparent;
+    outline: 1px solid var(--color-main);
+    color: var(--color-white);
+    @include hover {
+      border-radius: var(--border-radius);
+      background: var(--button-gradient);
+      color: var(--color-white);
+      outline: none;
+    }
+  }
+}
