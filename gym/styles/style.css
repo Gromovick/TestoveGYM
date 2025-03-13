@@ -1201,7 +1201,9 @@ svg * {
     font-size: 16px;
   }
 }
-
+.footer{
+  overflow: hidden;
+}
 .footer__inner {
   padding-top: 100px;
   padding-bottom: 150px;
